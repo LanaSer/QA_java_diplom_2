@@ -32,7 +32,7 @@ public class Methods {
     }
 
     @Step("Проверка кода ответа при создании заказа без юзера")
-    public void OrderNoUser(ValidatableResponse response) {
+    public void orderNoUser(ValidatableResponse response) {
         response.statusCode(401).and().assertThat().body("message", equalTo("You should be authorised"));
     }
 

@@ -31,7 +31,7 @@ public class GetOrderTest {
     @DisplayName("Получение списка заказов без регистрации")
     public void getOrderNoUserTest() {
         ValidatableResponse response = steps.getNoUserOrders();
-        methods.OrderNoUser(response);
+        methods.orderNoUser(response);
     }
 
     @Test
